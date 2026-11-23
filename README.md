@@ -5,4 +5,4 @@ Anteprima statica del portale web di HI-Coach, con dati sintetici. Non è il sit
 - [Vetrina](https://rdbecrsolutions.github.io/HI-Coach-demo/)
 - [Pagina gara di prova](https://rdbecrsolutions.github.io/HI-Coach-demo/gara/maratona-sintetica-di-prova/)
 
-Generata dal prototipo del portale nel repository HI-Coach, commit 2cb2310. I conteggi dei giorni sono fissi alla data di generazione. Kudos, login e feed non sono inclusi: richiedono il server.
+Generata dal prototipo del portale nel repository HI-Coach, commit 30951e5. I conteggi dei giorni sono fissi alla data di generazione; gli indirizzi delle card possono cambiare a ogni pubblicazione. Kudos, login e feed non sono inclusi: richiedono il server.
