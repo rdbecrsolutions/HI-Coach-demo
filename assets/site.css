@@ -1,0 +1,22 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #ffffff; color: #1b1b1f;
+       font: 1rem/1.55 system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
+header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: baseline;
+         border-bottom: 1px solid #8a8a96; }
+.brand { margin: 0; font-weight: 700; }
+/* Bersaglio alto almeno 24 px (WCAG 2.2, 2.5.8) senza spostare il testo. */
+a { color: #0a4f8f; padding: 1px 0; }
+a:focus-visible, .skip:focus { outline: 3px solid #0a4f8f; outline-offset: 2px; }
+.skip { position: absolute; left: -10000px; }
+.skip:focus { left: 1rem; top: 1rem; background: #ffffff; padding: 0.5rem 1rem; }
+.muted { color: #4a4a55; }
+.eyebrow { margin: 0; font-size: 0.875rem; text-transform: uppercase;
+           letter-spacing: 0.04em; color: #4a4a55; }
+.card { border: 1px solid #8a8a96; border-radius: 0.5rem; padding: 1rem; margin: 1rem 0; }
+.badge { display: inline-block; border: 1px solid #1b1b1f; border-radius: 0.25rem;
+         padding: 0 0.4rem; font-size: 0.875rem; }
+.countdown { font-weight: 600; }
+ul.list { list-style: none; padding: 0; }
+dd { margin-left: 0; }
