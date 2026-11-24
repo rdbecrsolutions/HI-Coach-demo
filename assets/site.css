@@ -36,11 +36,12 @@ header {
   border-bottom: 1px solid var(--line);
 }
 .brand { margin: 0; font-size: 1.2rem; font-weight: 800; letter-spacing: -0.04em; }
+header nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem; }
 header nav a {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
-  padding: 0.5rem 1.1rem;
+  padding: 0.5rem 0.85rem;
   border-radius: 999px;
   background: var(--soft);
   font-weight: 700;
@@ -159,6 +160,77 @@ article > dl {
 }
 dt { color: var(--muted); }
 dd { margin: 0; font-size: 1.15rem; font-weight: 750; text-align: right; }
+.demo-notice {
+  margin: 1.25rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 0.3rem solid var(--link);
+  border-radius: 0.5rem;
+  background: var(--soft);
+}
+.login-fields {
+  display: grid;
+  gap: 1rem;
+  max-width: 32rem;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+.login-fields label { display: grid; gap: 0.35rem; font-weight: 700; }
+.login-fields input {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--page);
+  color: var(--muted);
+  font: inherit;
+}
+.login-fields button, .demo-action {
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+}
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+.metric {
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--soft);
+}
+.metric strong { display: block; font-size: 1.55rem; line-height: 1.25; }
+.metric span { color: var(--muted); font-size: 0.9rem; }
+.portal-section { margin: 2rem 0; }
+.workout, .feed-post, .chat-thread, .event-card, .admin-card {
+  margin: 1rem 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+.workout h3, .feed-post h3, .event-card h3, .admin-card h3 { margin: 0 0 0.5rem; }
+.chat-thread { display: grid; gap: 0.8rem; max-width: 42rem; }
+.chat-message {
+  max-width: 90%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background: var(--soft);
+}
+.chat-message.coach { justify-self: start; }
+.chat-message.runner { justify-self: end; background: #e4efd0; }
+.demo-role-links { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
 footer {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
@@ -168,7 +240,9 @@ footer {
 footer p { margin: 0; }
 @media (max-width: 38rem) {
   header, main, footer { padding-right: 1.1rem; padding-left: 1.1rem; }
-  header { min-height: 4.25rem; }
+  header { min-height: 4.25rem; gap: 0.5rem; }
+  header nav { gap: 0.3rem; }
+  header nav a { min-height: 2.5rem; padding: 0.4rem 0.65rem; font-size: 0.9rem; }
   main { padding-top: 1.5rem; padding-bottom: 3rem; }
   main > p.muted:first-child { margin-bottom: 1.5rem; }
   main > article { border-radius: 1rem; }
